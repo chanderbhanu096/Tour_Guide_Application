@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<!--    android:layout_margin="@dimen/subpadding"-->
+<!--d    card_view:cardElevation="@dimen/elevation"-->
+<!--    card_view:contentPaddingBottom="@dimen/subpadding"-->
+<!--    card_view:cardCornerRadius="@dimen/radius">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/ivImage"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvName"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:gravity="center"
+            android:padding="16dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDesc"
+            android:gravity="start"
+            android:padding="16dp"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>
